@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<title>Form Validation Exercise</title>
+<link rel="stylesheet" href="Styles/style.css" />
+</head>
+<body>
+<h2 style="text-align:center">Personal Information</h2>
+<form id="regForm" novalidate>
+<table cellpadding="4" style="margin:auto">
+<tr><td align="right">Enter name*:</td><td><input type="text" id="name"></td></tr>
+<tr><td align="right">Sex*:</td><td><label><input type="radio" name="sex" value="M">Male</label> <label><input type="radio" name="sex" value="F">Female</label></td></tr>
+<tr><td align="right">Enter email address*:</td><td><input type="text" id="email"></td></tr>
+<tr><td align="right">Enter birthday (MM/DD/YYYY)*:</td><td><input type="text" id="birthday"></td></tr>
+<tr><td align="right">Enter street address (line 1)*:</td><td><input type="text" id="street"></td></tr>
+<tr><td align="right">Enter city*:</td><td><input type="text" id="city"></td></tr>
+<tr><td align="right">Select a region*:</td><td><select id="region"><option value=""></option><option>Miền Bắc</option><option>Miền Trung</option><option>Miền Nam</option></select></td></tr>
+<tr><td align="right">Enter 5-digit ZIP code*:</td><td><input type="text" id="zip"></td></tr>
+<tr><td></td><td><button type="submit">Finish</button> <button type="button" id="btnClear">Clear</button></td></tr>
+</table>
+</form>
+<ul id="errors" class="err"></ul>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="Scripts/cau9.js"></script>
+</body>
+</html>

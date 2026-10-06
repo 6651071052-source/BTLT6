@@ -1,0 +1,19 @@
+// Câu 32: Hiển thị hình ảnh ngẫu nhiên khi nhấn nút "Show Image"
+var images = [
+    { src: "https://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg", width: "240", height: "160" },
+    { src: "https://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg",      width: "320", height: "195" },
+    { src: "https://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg",    width: "500", height: "343" }
+];
+
+function display_random_image() {
+    var i = Math.floor(Math.random() * images.length);
+    var img = document.createElement("img");
+    img.src = images[i].src;
+    img.width = images[i].width;
+    img.height = images[i].height;
+    img.alt = "Random image " + (i + 1);
+
+    var container = document.getElementById("imageContainer");
+    container.innerHTML = "";      // xóa ảnh cũ
+    container.appendChild(img);
+}
